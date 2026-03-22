@@ -53,7 +53,7 @@ NN_model, Scaler, categorical_mappings, pipeline_model = load_assets()
 # UI setup & ML
 st.title("Agricultural Intelligence: Dual-Model Prediction")
 
-df = pd.read_csv("../data/processed/Final_dataset.csv")
+df = pd.read_csv(os.path.join(BASE_DIR,"data/processed/Final_dataset.csv"))
 
 locations = sorted(df["area"].unique())
 crops = sorted(df["crops"].unique())
