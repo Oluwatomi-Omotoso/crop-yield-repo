@@ -32,7 +32,7 @@ def load_assets():
 
     # Load NN assets
     nn_model = CropYieldModel(input_size, output_size=1)
-    nn_model.load_state_dict(torch.load(os.path.abspathos.path.join(BASE_DR, dirname"/ML/models/NN_Models/neural_net.pth"))
+    nn_model.load_state_dict(torch.load(os.path.abspath.os.path.join(BASE_DR, dirname,"/ML/models/NN_Models/neural_net.pth")))
     nn_model.eval()
 
     scaler = joblib.load(os.path.join(BASE_DIR),"ML/models/NN_Models/scaler.pkl")
