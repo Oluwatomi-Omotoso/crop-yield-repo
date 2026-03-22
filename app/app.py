@@ -39,7 +39,7 @@ def load_assets():
     nn_model.eval()
 
     scaler = joblib.load(os.path.join(BASE_DIR,"ML/models/NN_Models/scaler.pkl"))
-    cat_mappings = joblib.load("../ML/models/NN_Models/category_mappings.pkl")
+    cat_mappings = joblib.load(os.path.join(BASE_DIR,"ML/models/NN_Models/category_mappings.pkl"))
 
     # load pipeline model(Random_Forest)
     pipeline_model = joblib.load("../ML/models/final-model.pkl")
