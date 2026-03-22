@@ -4,7 +4,7 @@ To predict expected crop yields using environmental and agricultural inputs such
 
 The project covers the full data science pipeline, from raw data ingestion and exploratory data analysis through to model training and evaluation, and a deployable application.
 
-you can view the full interactive application (here:)[https/oluwatomi-omotoso-crop-yield-predictor.streamlit.app/]
+you can view the full interactive application [here:](https/oluwatomi-omotoso-crop-yield-predictor.streamlit.app/)
 
 ---
 
