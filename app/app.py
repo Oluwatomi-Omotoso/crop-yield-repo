@@ -156,9 +156,8 @@ if st.button("Generate comparative predictions"):
 
     # Model confidence (R squared Scores)
     from ML.pipelines.evaluate_algorithms import get_best_model_r2_score
-    import pandas as pd
 
-    comparison_df = pd.read_csv("../data/processed/algoritm_comparison_data.csv")
+    comparison_df = pd.read_csv(os.path.join(BASE_DIR, "data/processed/algoritm_comparison_data.csv"))
     pipeline_r2_score = get_best_model_r2_score(comparison_df)
 
     st.subheader("Model Confidence Metrics")
